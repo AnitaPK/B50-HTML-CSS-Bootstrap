@@ -42,13 +42,101 @@
        }
        a:visited{
         color: green;
+       }
+       table, th,td{
+        border: 1px solid black;
+        /* border-collapse: collapse; */
+        padding: 10px;
+        border-spacing: 10px;
+       }
+       table th{
+        text-align: left;
+       }
+       table{
+        background-color: yellow;
+       }
+       th{
+        background-color: pink;
+       }
+       td{
+        /* background-color: blue; */
+        color: white;
+       }
+       tr:nth-child(2){
+        background-color: green;
+       }
+       .divDemo{
+        width: 300px;
+        height: 500px;
+        background-color: gray;
+        border-radius: 20px;
+        /* margin: 5px auto; */
+      
+       }
+       .flexBox{
+        display: flex;
+        justify-content: center;
 
+       }
+       .textDecor{
+        /* color: white; */
+        text-align: center;
+        font-size: 30px;
+        text-shadow: 2px 2px 3px rgb(249, 3, 3), 3px 3px 7px orange;
        }
     </style>
     
     </head>
     <body>
         <div id="gotToTop"></div>
+        <h1 class= "textDecor">Batch50</h1>
+        <div class="flexBox">
+        
+        <div class="divDemo">
+            <p class="textDecor">WISDOM SPROUTES</p>
+        </div>
+        <!-- <div class="divDemo"></div> -->
+        </div>
+
+        <h2>Table</h2>
+        <div style="overflow-X: auto;">
+        <table style="width:100%">
+            <thead>
+                <tr>
+                    <th> Name</th>
+                    <th> Address</th>
+                    <th colspan="2"> Contact</th>
+                    <th>Department</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Virat Kohli</td>
+                    <td>Delhi</td>
+                    <td>456781234567</td>
+                    <td>456781234567</td>
+                    <td>Sports-Cricket</td>
+                </tr>
+                <tr>
+                    <td>Messi</td>
+                    <td>Argentina</td>
+                    <td>456781234567</td>
+                    <td>456781234567</td>
+
+                    <td>Sports-Bootball</td>
+                </tr>
+                <tr>
+                    <td>Ghukesh</td>
+                    <td>India</td>
+                    <td>456781234567</td>
+                    <td>456781234567</td>
+
+                    <td>Sports-Chess</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
         <h2 >Lists</h2>
         discriptive List 
         <dl>
