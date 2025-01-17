@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css" >
+</head>
+<body class="gradImage">
+    <div class="containerOne">
+        <div class="leftSide">
+            <img src="./assets/registerImage.jpg"/>
+        </div>
+        <div class="rightSide">
+            <div class="regForm">
+    <h2>Registration Form</h2>
+                <div class="custom-form-controls">
+                <label for="fname" >First Name:</label>
+                <input type="text" placeholder="write first name here" id="fname" value="Wisdom" name="fName" disabled/><br>
+                </div>
+                <div class="custom-form-controls">
+                <label for="lname">Last Name</label>
+                <input type="text" placeholder="write last name here" id="lname" /><br>
+                </div>
+            <div class="custom-form-controls">
+                <label for="cnumber">Contact Number</label>
+                <input type="tel" placeholder="+91-1234567890" pattern="+91[0-9]{10}"/><br>
+                </div>
+                <div class="custom-form-controls">
+                <label>Email</label>
+                <input type="email" required/><br>
+            </div>
+            <div class="custom-form-controls">
+                <label>Password</label>
+                <input type="password" /><br>
+                </div>
+                <div class="custom-form-controls">
+                <label>Marksheet</label>
+                <input type="file" /><br>
+                </div>
+                <div class="custom-form-controls">
+                    <label>Pincode</label>
+                    <input type="number" size="4"/><br>
+                    </div>
+                <button>Submit</button>
+                <input type="button" value="Submit"/>
+                <input type="submit" />
+                <input type="reset" />
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
