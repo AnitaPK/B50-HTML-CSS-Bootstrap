@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .classContainer{
+            width: 700px;
+            height: 700px;
+            border: 1px solid black;
+            position: relative;
+            background-image: url('./assets/bgImage.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 200px;
+        }
+        .DivDemo{
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            position: absolute;
+            bottom:50%;
+            right: 50%;
+            opacity: 0.5;
+        }
+        .divTwo{
+            width: 700px;
+            height: 50px;
+            background-color: yellow;
+            position: absolute;
+            top:0
+        }
+        .divRed{
+            width: 150px;
+            height:600px;
+            background-color: red;
+            position: absolute;
+            left: 40%;
+            top:-30px
+        }
+        .borderDiv{
+            width: 100px;
+            height: 50px;
+            background-color: chocolate;
+            border-radius: 20px;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+        .demo2{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .demo2:hover{
+            /* transform: rotate(45deg); */
+            /* transform: scale(2,2); */
+        }
+        .transMove{
+            animation: mahika;
+            animation-duration: 10s;
+            animation-delay: 5s;
+            transition: width 5s, background-color 4s, font-size 5s, text-align 5s, transform 5s;
+        }
+        .transMove:hover{
+            width:700px;
+            background-color: yellow;
+            font-size: xx-large;
+            text-align:center;
+            transform: skew(25deg,25deg);
+            
+        }
+        @keyframes mahika{
+            /* to{background-color:pink}
+            from{background-color:black} */
+            0%{background-color:pink;font-size:40px}
+            20%{font-size:small;transform:rotate(30deg)}
+            40%{transform: translate(400px);}
+            50%{background-color:orange;font-size:40px}
+            70%{transform:rotate(-30deg)}
+            80%{font-size:small}
+            90%{background-color:purple;font-size:40px}
+            100%{}
+        }
+    </style>
+</head>
+<body>
+    <div class="demo2">HELLO</div>
+    <div class="transMove demo2">Anushka</div>
+    <!-- <div class="classContainer">
+        <div class="DivDemo"><h2 style="text-align: center;">HELLO</h2></div>
+        <div class="divTwo"></div>
+        <div class="divRed"></div>
+        <div class="borderDiv"><h4 style="text-align: center;">WatsApp</h4></div>
+    </div> -->
+    
+</body>
+</html>
