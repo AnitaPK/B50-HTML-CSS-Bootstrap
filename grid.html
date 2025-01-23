@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainContainer{
+            width: 100%;
+            display: grid;
+            grid-template-areas: 'n1 n1 n1 n1 n1'
+                                 'lnav s1 s1 s2 s2'
+                                 'lnav s3 s3 s3 s3'
+                                 'lnav s4 s4 s4 s5'
+                                 'foo foo foo foo foo ';
+        }
+        .navbar1{
+            height: 100px;
+            background-color: aqua;
+            grid-area: n1;
+        }
+        .leftVerticalBar{
+            grid-area: lnav;
+            background-color: blueviolet;
+        }
+        .mainContent{}
+        .section1{
+            grid-area: s1;
+            height: 300px;
+            border: 1px solid black;
+        }
+        .section2{
+            grid-area: s2;
+            height: 300px;
+            border: 1px solid black;
+        }
+        .section3{
+            grid-area: s3;
+            height: 300px;
+            /* border: 1px solid black; */
+            background-image: linear-gradient(to right, red, skyblue);
+        }
+        .section4{
+            grid-area: s4;
+            height: 300px;
+            border: 1px solid black;
+            background-image: radial-gradient(black,blue);
+        }
+        .section5{
+            grid-area: s5;
+            height: 300px;
+            border: 1px solid black;
+            background-image: conic-gradient(yellow, blue);
+        }
+        .footer1{
+            height: 100px;
+            background-color: gray;
+            grid-area: foo;
+        }
+        .fruitContainer{
+            display: grid;
+            width: 700px;
+            height: 700px;
+            background-color: pink;
+            gap:10px
+        }
+        .grapes{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            background-color: rgb(45, 10, 77);
+        }
+        .strawberry{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            background-color: rgb(221, 47, 126);
+
+        }
+        .watermelon{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            background-color: red;
+        }
+        .orange{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: orange;
+        }
+        .papaya{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: rgb(255, 225, 0);
+        }
+        .pineapple{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            background-color: rgb(255, 225, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="fruitContainer">
+        <div class="grapes"></div>
+        <div class="strawberry"></div>
+        <div class="watermelon"></div>
+        <div class="orange"></div>
+        <div class="papaya"></div>
+        <div class="pineapple"></div>
+    </div>
+
+    <div class="mainContainer">
+        <nav class="navbar1"></nav>
+        <div class="leftVerticalBar"></div>
+        <!-- <main class="mainContent"> -->
+            <section class="section1"></section>
+            <section class="section2"></section>
+            <section class="section3"></section>
+            <section class="section4"></section>
+            <section class="section5"></section>
+        <!-- </main> -->
+        <footer class="footer1"></footer>
+    </div>
+</body>
+</html>
