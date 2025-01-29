@@ -1,3 +1,20 @@
 .customIcons{
     font-size: x-large;
 }
+
+
+.customContainerAddress{
+    background-image: url('./assets/bgImage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.addressCotainer{
+    background-color: white;
+    padding: 20px;
+    margin: 40px;
+    width: 400px;
+}
+.customImage{
+    height: 300px;
+    width: 900px;
+}

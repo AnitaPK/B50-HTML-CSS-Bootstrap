@@ -89,6 +89,7 @@ color: rgb(219, 38, 68);
 .footerTop .leftTop{
     background-color: rgb(219, 38, 68);
     color: white;
+    font-size: xx-large;
     flex: 2;
     padding-top: 100px ;
 }
@@ -116,4 +117,24 @@ padding:10px;
 }
 .OneCol , .TwoCol, .ThreeCol, .FourCol {
     padding: 20px;
+}
+
+
+
+
+@media screen and (max-width:600px){
+    .footerTop{
+        flex-direction: column;
+    }
+    .footerTop .leftTop{
+        /* flex:100%; */
+        font-size: 20px;
+        color: blue;
+    }
+    .rightTop{
+        flex:100%;
+    }
+.footerBottom{
+    display: none;
+}
 }

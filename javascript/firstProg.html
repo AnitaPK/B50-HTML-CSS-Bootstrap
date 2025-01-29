@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alert('Message from button Click')">Click me to show message</button>
+<h1 id="Demo1"></h1>
+<button onclick="changeContent()">Click me to change Content</button>
+<button onclick="ClickForWrite()">Click me to clear All</button>
+<button onclick="getName()">Click me to get and show name</button>
+<h3 id="showName"></h3>
+
+<input type="text" id="num1"/>
+<input type="text" id="num2"/>
+<p id="result"></p>
+<button onclick="addition()">+</button>
+<button onclick="subtraction()">-</button>
+<button >*</button>
+<button >/</button>
+
+
+
+    <script src="./firstProg.js"></script>
+    <script>
+        console.log("Hello from script tag");
+        // alert("Hello from alert")
+
+        document.getElementById('Demo1').innerHTML = 'Hello from SCript'
+
+        function changeContent(){
+            document.getElementById('Demo1').innerHTML = "hey h1 tag your content changed";
+            document.getElementById('Demo1').style.color = 'red'
+        }
+        document.write('Hello from write')
+function ClickForWrite(){
+    document.write('Haa haa haa haa all GONE')
+}
+function getName(){
+  name = prompt("Enter Your name")
+  console.log(name);
+//   document.write(name);
+document.getElementById('showName').innerHTML = name
+}
+//   let const var
+
+function addition(){
+    n1 = Number(document.getElementById('num1').value)
+    n2 = parseInt(document.getElementById('num2').value)
+    document.getElementById('result').innerHTML = n1+n2
+}
+
+function subtraction(){
+    n1 = Number(document.getElementById('num1').value)
+    n2 = parseInt(document.getElementById('num2').value)
+    document.getElementById('result').innerHTML = n1-n2
+}
+    </script>
+</body>
+</html>
