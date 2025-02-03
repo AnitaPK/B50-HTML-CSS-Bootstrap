@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .listView{
+            background-color: pink;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <ul id="fruitList"></ul>
+<input type="number" id="num1" />
+<input type="number" id="num2" />
+<p id="result">0</p>
+<button onclick="addition()">+</button>
+<button onclick="subtraction()">-</button>
+<button>*</button>
+<button>/</button>
+<button onclick="clearAll()">Clear</button>
+<script>
+addition = ()=>{
+    n1 =parseInt(document.getElementById('num1').value)
+    n2 =parseInt(document.getElementById('num2').value)
+    document.getElementById('result').innerHTML = n1+n2;
+}    
+
+function subtraction(){
+    n1 =parseInt(document.getElementById('num1').value)
+    n2 =parseInt(document.getElementById('num2').value)
+    document.getElementById('result').innerHTML = n1-n2;
+}
+
+clearAll =()=>{
+    document.getElementById('num1').value = ''
+    document.getElementById('num2').value =''
+    document.getElementById('result').innerHTML = 0
+}
+</script>
+
+
+    <script>
+        fruits = ['Banana', 'Grapes', 'Papaya', 'Manogo', 'Apple', 'Kiwi']
+        lists = document.getElementById('fruitList')
+        console.log(lists)
+        lists.innerHTML = fruits.map((element)=>`<li class='listView'>
+                                            ${element}
+                                            </li>`).join('')
+    </script>
+</body>
+</html>
