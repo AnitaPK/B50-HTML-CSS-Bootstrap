@@ -1,0 +1,10 @@
+.customBTN{
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+}
+.customBTN:hover{
+    background-color: rgb(0, 0, 165);
+}
